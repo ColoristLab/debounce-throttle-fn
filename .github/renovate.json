@@ -1,0 +1,33 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices", ":semanticCommits", ":semanticCommitTypeAll(chore)"],
+  "enabledManagers": ["npm", "github-actions"],
+  "ignorePresets": [":pinDevDependencies", ":maintainLockFilesWeekly"],
+  "prHourlyLimit": 5,
+  "timezone": "Asia/Shanghai",
+  "labels": ["dependencies", "renovate"],
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "description": "Wait 1 hour for npm releases",
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "1 hour"
+    },
+    {
+      "groupName": "dev dependencies",
+      "matchDepTypes": ["devDependencies"]
+    },
+    {
+      "enabled": false,
+      "matchDepTypes": ["peerDependencies"]
+    },
+    {
+      "enabled": false,
+      "matchPackageNames": ["node"]
+    },
+    {
+      "matchPackageNames": ["/oxlint/"],
+      "labels": ["linting"]
+    }
+  ]
+}
