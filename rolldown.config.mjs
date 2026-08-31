@@ -15,12 +15,10 @@ export default defineConfig({
       file: "dist/index.js",
       format: "es",
     },
-    // If your library needs to support CDN/script usage,
-    // keep this IIFE build. Otherwise, you can remove it.
     {
-      file: `dist/your-library.${isProd ? "min." : ""}js`,
+      file: `dist/debounce-throttle-fn.${isProd ? "min." : ""}js`,
       format: "iife",
-      name: "YourLibrary",
+      name: "Debounce",
       minify: isProd,
     },
   ],

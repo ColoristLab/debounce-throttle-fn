@@ -1,19 +1,25 @@
 {
-  "name": "javascript-library-starter",
+  "name": "debounce-throttle-fn",
   "version": "0.0.0",
-  "description": "A modern starter template for building JavaScript libraries.",
+  "description": "Debounce and throttle a function",
   "keywords": [
-    "javascript",
-    "library-starter"
+    "debounce",
+    "debouncer",
+    "delay",
+    "fn",
+    "func",
+    "function",
+    "invoked",
+    "throttle"
   ],
   "bugs": {
-    "url": "https://github.com/ajiho/javascript-library-starter/issues"
+    "url": "https://github.com/ColorlabHQ/debounce-throttle-fn/issues"
   },
   "license": "MIT",
   "author": "ajiho",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ajiho/javascript-library-starter.git"
+    "url": "git+https://github.com/ColorlabHQ/debounce-throttle-fn.git"
   },
   "funding": "https://www.lujiahao.com/sponsor",
   "files": [
